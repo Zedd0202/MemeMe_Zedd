@@ -26,7 +26,7 @@
                                 <rect key="frame" x="67" y="80" width="240" height="467"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Zedd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHd-KP-0cC">
-                                <rect key="frame" x="288" y="626" width="71" height="21"/>
+                                <rect key="frame" x="291" y="626" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,12 +34,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="yHd-KP-0cC" secondAttribute="trailing" id="3vv-aR-Hgg"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yHd-KP-0cC" secondAttribute="bottom" constant="20" id="ALl-uv-nek"/>
-                            <constraint firstItem="yHd-KP-0cC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="272" id="C4g-yq-yUN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yHd-KP-0cC" secondAttribute="bottom" constant="20" id="25P-BE-Lpv"/>
+                            <constraint firstItem="yHd-KP-0cC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="275" id="7Dw-7w-z4B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dT9-ju-35X" secondAttribute="trailing" constant="52" id="E6x-92-jTv"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dT9-ju-35X" secondAttribute="bottom" constant="120" id="FPt-Fj-hmS"/>
-                            <constraint firstItem="yHd-KP-0cC" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="606" id="KFa-U1-NPa"/>
+                            <constraint firstItem="yHd-KP-0cC" firstAttribute="top" secondItem="dT9-ju-35X" secondAttribute="bottom" constant="79" id="HMA-FP-WQf"/>
+                            <constraint firstItem="yHd-KP-0cC" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="afR-XP-exu"/>
                             <constraint firstItem="dT9-ju-35X" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="b5x-lt-S0v"/>
                             <constraint firstItem="dT9-ju-35X" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51" id="d1r-Xg-AN1"/>
                         </constraints>

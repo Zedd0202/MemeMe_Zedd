@@ -35,26 +35,26 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="152" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCT-oD-Ds5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MemeTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" rowHeight="152" id="uJh-sn-4Lj" customClass="MemeTableViewCell" customModule="MemeMe" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MemeTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MemeTableViewCell" rowHeight="152" id="uJh-sn-4Lj" customClass="MemeTableViewCell" customModule="MemeMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uJh-sn-4Lj" id="89H-pu-EUh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="151"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-60-QUs">
-                                            <rect key="frame" x="8" y="15" width="171" height="128"/>
+                                            <rect key="frame" x="8" y="15" width="138" height="128"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8g1-6o-ttE">
-                                            <rect key="frame" x="208" y="95" width="159" height="18"/>
+                                            <rect key="frame" x="175" y="95" width="159" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpj-X2-ukk">
-                                            <rect key="frame" x="208" y="53" width="159" height="18"/>
+                                            <rect key="frame" x="175" y="53" width="159" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -73,6 +73,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="8g1-6o-ttE" secondAttribute="trailing" id="xrj-08-SCA"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="bottomLabel" destination="8g1-6o-ttE" id="RFk-Xk-Xy4"/>
                                     <outlet property="tableImageView" destination="hhn-60-QUs" id="6XM-Cu-bSI"/>
@@ -151,10 +152,10 @@
         <scene sceneID="sXJ-qe-XcW">
             <objects>
                 <collectionViewController storyboardIdentifier="MemeCollectionViewController" id="XAv-kO-Z3w" customClass="MemeCollectionViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="vPs-0r-h6J">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vPs-0r-h6J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aMc-JF-eih">
                             <size key="itemSize" width="165" height="176"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -169,7 +170,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="165" height="176"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-ep-dr8">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jke-ep-dr8">
                                             <rect key="frame" x="-1" y="0.0" width="166" height="176"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -223,6 +224,7 @@
                             </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKV-mD-TTY">
                                 <rect key="frame" x="0.0" y="575" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="XP5-5J-i0K"/>
                                     <barButtonItem image="1485465059_device-camera-capture-photo-outline-stroke" id="dT4-Kt-3TV">
@@ -235,6 +237,7 @@
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="2r5-tx-LBk"/>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="eDL-Az-VVq"/>
                                     <barButtonItem image="1485465114_thefreeforty_picture" id="kpx-CM-n66">
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="hs6-xo-1zf"/>
                                         </connections>
@@ -275,12 +278,13 @@
                     <navigationItem key="navigationItem" title=" Make Meme" id="EDT-yu-eBB">
                         <barButtonItem key="leftBarButtonItem" image="1485465155_share" id="tc8-5k-TDt">
                             <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="shareAnImage:" destination="BYZ-38-t0r" id="x7l-vj-gSj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="8PJ-Gh-OcJ">
+                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelAction:" destination="BYZ-38-t0r" id="Ac8-hc-hau"/>
                             </connections>
@@ -324,7 +328,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.96387178090000003" blue="0.42504084889999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="c1E-NY-QV0" firstAttribute="top" secondItem="19Q-f8-Ncb" secondAttribute="bottom" constant="36" id="8oI-hk-Dcl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="19Q-f8-Ncb" secondAttribute="trailing" id="B0e-S9-WrD"/>
