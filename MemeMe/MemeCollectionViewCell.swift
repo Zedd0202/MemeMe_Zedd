@@ -9,6 +9,6 @@
 import UIKit
 
 class MemeCollectionViewCell: UICollectionViewCell {
-    
+    //콜렉션뷰의 셀들을 관리하는 클래스. 
     @IBOutlet weak var collectionImageView: UIImageView!
 }

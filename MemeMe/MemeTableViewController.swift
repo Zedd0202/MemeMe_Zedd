@@ -13,33 +13,7 @@ class MemeTableViewController: UITableViewController {
     var memes:[Meme]!
     
     
-    //let sharedApplication = UIApplication.shared.delegate as! AppDelegate
-
-    
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        let object = UIApplication.shared.delegate
-//        let appDelegate = object as! AppDelegate
-//        if(appDelegate.memes.count != memeCount) {
-//            memes = appDelegate.memes
-//            memeCount = memes.count
-//        }
-//        tableView.reloadData()
-//    }
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        
-//    }
-//    
-//    
-//    
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return memeCount
-//    }
-//    
+//테이블 뷰 셀들을 리턴해주는 테이블뷰 함수이다. 테이블이 보였을 때 어떤식으로 보여질 지 지정해주는 작업.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell") as! MemeTableViewCell
@@ -51,19 +25,14 @@ class MemeTableViewController: UITableViewController {
 
         return cell
     }
-    
+    //보고싶은 사진을 눌렀을 때 detailView로 가게해주는 작업.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let MemedetailController = storyboard?.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
         MemedetailController.meme = memes[(indexPath as NSIndexPath).row]
         navigationController?.pushViewController(MemedetailController, animated: true)
     }
     
-//
-////    override func setEditing(_ editing: Bool, animated: Bool) {
-////        super.setEditing(editing, animated: animated)
-////        self.tableView.setEditing(editing, animated: animated)
-////    }
-//
+//지우고싶은 테이블 뷰를 swipe해서 지우는 작업. call by reference이기 때문에 appdelegate도 지워줘야 한다.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
@@ -76,14 +45,14 @@ class MemeTableViewController: UITableViewController {
                 
             }
         }
-    
+    //뷰가 나타날 때 해줄작업
     override func viewWillAppear(_ animated: Bool) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
         
         tableView?.reloadData()
     }
-    
+    //테이블뷰의 사진의 갯수를 리턴해주는 작업. 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
     }

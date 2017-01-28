@@ -9,7 +9,7 @@
 import UIKit
 
 class MemeTableViewCell: UITableViewCell {
-
+    //테이블뷰 셀을 관리하는 클래스이다. 
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var tableImageView: UIImageView!
