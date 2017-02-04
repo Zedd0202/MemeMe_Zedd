@@ -32,6 +32,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         NSStrokeWidthAttributeName : 3.0,
         ] as [String : Any]
     //meme의 top, bottom텍스트 필드의 폰트와 글씨크기를 지정해주는 작업.
+    //소스트리 테스트테스트테스트
     
     //view가 처음 보일 때 수행되는 작업들
     override func viewDidLoad() {
@@ -61,6 +62,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         dismiss(animated: true, completion: nil)
 
     }
+    
     //카메라 버튼을 눌렀을 때 수행될 동작.
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
         imagePicker.delegate = self
@@ -71,6 +73,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
 
 
     }
+    
     //앨범 버튼을 눌렀을 때 수행될 동작
     @IBAction func pickAnImageFromAlbum(_ sender: Any) {
         imagePicker.delegate = self
@@ -79,6 +82,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         present(imagePicker, animated: true, completion: nil)
 
     }
+    
     //viewDidLoad 다음에 수행될 함수이다.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -102,6 +106,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         
         
     }
+    
     //이미지선택이 취소되면 수행되는 함수.
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
@@ -111,9 +116,8 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
     //텍스트필드를 선택하면 TOP,BOTTOM이라는 글자가 사라지고 빈 공간부터 적을 수있다.
     func textFieldDidBeginEditing(_ textField: UITextField) {
             textField.text = ""
-       
-        
     }
+    
     //리턴버튼을 누르면 수행 될 함수.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -128,6 +132,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         unsubscribeFromKeyboardNotifications()
 
     }
+    
     //키보드가 보여질 때 수행되는 함수
     func keyboardWillShow(_ notification:Notification) {
         //바텀 텍스트 필드의 경우 이미지뷰를 키보드의 높이 만큼 올려줘야 한다.
@@ -145,6 +150,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
             view.frame.origin.y = view.frame.origin.y + getKeyboardHeight(notification)
         }
 }
+    
     //키보드의 높이를 가져오는 함수이다.
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
         let userInfo = notification.userInfo
@@ -172,6 +178,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         memedImage = generateMemedImage()
        
         let controller = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        
         //present ActivityViewController, popover로 보여줄것이다.
         controller.popoverPresentationController?.sourceView = view
         present(controller, animated: true, completion: nil)
@@ -200,6 +207,7 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
         appDelegate.memes.append(meme)
         
     }
+    
     //미미화된 이미지를 생성하는 작업이다.
     func generateMemedImage() -> UIImage {
         //툴바들을 안보이게 먼저 설정해준다.
