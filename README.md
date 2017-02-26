@@ -50,5 +50,5 @@ MemeMe  App
 **시연 동영상**
 ==========
 
-![notification](./image/MemeMe시연영상_by_Zedd)) 
+[linkname](https://youtu.be/VS6jJJBBWEo)
 
