@@ -118,6 +118,8 @@ class MemeEditViewController: UIViewController,UIImagePickerControllerDelegate,U
             textField.text = ""
     }
     
+    
+    
     //리턴버튼을 누르면 수행 될 함수.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

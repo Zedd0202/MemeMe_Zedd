@@ -83,6 +83,7 @@ class MemeTableViewController: UITableViewController {
     func cancelDeleteTable(alertAction: UIAlertAction!) {
         deleteTableIndexPath = nil
     }
+    
     //뷰가 나타날 때 해줄작업
     override func viewWillAppear(_ animated: Bool) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -90,6 +91,8 @@ class MemeTableViewController: UITableViewController {
         
         tableView?.reloadData()
     }
+    
+    
     //테이블뷰의 사진의 갯수를 리턴해주는 작업. 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
