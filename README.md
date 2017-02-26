@@ -50,6 +50,6 @@ MemeMe  App
 **시연 동영상**
 ==========
 
-[![Everything Is AWESOME](https://youtu.be/VS6jJJBBWEo)
+[시연 동영상은 유투브에서 확인 하실 수 있습니다.](https://youtu.be/VS6jJJBBWEo)
 
 
