@@ -50,6 +50,6 @@ MemeMe  App
 **시연 동영상**
 ==========
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/VS6jJJBBWEo)
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/VS6jJJBBWEo)
 
 
